@@ -160,25 +160,8 @@ $(function() {
 
   // 编辑文章事件
   $('tbody').on('click','.btn-edit',function() {
-
-    // 获取文章列表ID
-    var id = $(this).attr('data-id')
-    // 获取文章详情信息
-    $.ajax({
-      method: 'GET' ,
-      url: '/my/article/' + id ,
-      success: function(res) {
-        console.log(res)
-      }
-    })
-
-
-
-
-
-
-    // 跳转到文章编辑页
-    // location.href = '/article/art_edit.html'
+    // 拼接查询字符串
+    location.href = '/article/art_edit.html?id=' + $(this).attr('data-id')
 
   })
 
