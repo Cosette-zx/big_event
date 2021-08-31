@@ -8,22 +8,27 @@
     <!-- 导入layUI样式 -->
     <link rel="stylesheet" href="/assets/lib/layui/css/layui.css">
     <!-- 导入自己的样式表 -->
-    <link rel="stylesheet" href="/assets/css/login.css">
+    <link rel="stylesheet" href="/assets/css/login1.css">
     
 </head>
 <body>
 <!-- 头部logo区 -->
-<div class="layui-main">
+<!-- <div class="layui-main">
     <img src="/assets/images/logo.png" alt=""/>
-</div>
+</div> -->
 <!-- 登录注册区 -->
+<div class="layui-container" id="particles">
 <div class="loginAndRegBox">
     <!-- 标题图片 -->
-    <div class="title-box"></div>
+    <!-- <div class="title-box"><h1>大事件管理系统</h1></div> -->
     <!-- 登录的div -->
     <div class="login-box">
         <!-- layUI引入 登录的表单 -->
         <form class="layui-form" id="form_login">
+            <!-- 后台标题 -->
+            <div class="layui-form-item logo-title">
+                <h1>大事件后台管理系统</h1>
+            </div>
             <!-- 用户名 -->
             <div class="layui-form-item">
                 <i class="layui-icon layui-icon-username"></i>  
@@ -38,7 +43,7 @@
             </div>
             <!-- 登录：提交按钮(lay-submit属性) -->
             <div class="layui-form-item">
-                <button class="layui-btn layui-btn-fluid layui-btn-normal" lay-submit lay-filter="formDemo">登录</button>
+                <button class="layui-btn layui-btn-fluid layui-btn-normal btn-color" lay-submit lay-filter="formDemo">登录</button>
             </div>
             <div class="layui-form-item links">
                 <a href="javascript:;" id="link_reg">去注册账号</a>
@@ -50,6 +55,10 @@
     <div class="reg-box">
         <!-- 注册的表单 -->
         <form class="layui-form" id="form_reg">
+            <!-- 后台标题 -->
+            <div class="layui-form-item logo-title">
+                <h1>大事件后台管理系统</h1>
+            </div>
             <!-- 用户名 -->
             <div class="layui-form-item">
                 <i class="layui-icon layui-icon-username"></i>  
@@ -70,7 +79,7 @@
             </div>
             <!-- 注册按钮 -->
             <div class="layui-form-item">
-                <button class="layui-btn layui-btn-fluid layui-btn-normal" lay-submit lay-filter="formDemo">注册</button>
+                <button class="layui-btn layui-btn-fluid layui-btn-normal btn-color" lay-submit lay-filter="formDemo">注册</button>
             </div>
             <div class="layui-form-item links">
             <a href="javascript:;" id="link_login">去登录</a>
@@ -80,10 +89,13 @@
     
     
 </div>
+</div>
 <!-- layUI -->
 <script src="/assets/lib/layui/layui.all.js"></script>
 <!-- jQuery -->
 <script src="/assets/lib/jquery.js"></script>
+<!-- jQuery粒子特效 -->
+<script src="/assets/lib/jquery.particleground.min.js"></script>
 <!-- 自己封装的baseAPI.js -->
 <script src="/assets/js/baseAPI.js"></script>
 <!-- 自定义js脚本 -->
