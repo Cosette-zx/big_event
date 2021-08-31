@@ -1,0 +1,77 @@
+html,body {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  width: 100%;
+  /* background:url('/assets/images/login_bg.jpg') no-repeat center; */
+  background-color: #158bb8;
+  background-size: cover;
+}
+.layui-container {
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+}
+
+/* 登录注册栏 */
+.loginAndRegBox {
+  width: 360px;
+  height: 300px;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%,-50%);
+  
+}
+/* 系统标题 */
+.logo-title {
+  padding-top: 10px;
+  height: 40px;
+  text-align: center;
+  /* background: url('/assets/images/login_title.png')no-repeat center; */
+}
+.logo-title h1 {
+  text-align: center;
+  color: #1E90FF;
+  font-size: 25px;
+  font-weight: bold;
+}
+/* 登录框 */
+.btn-color {
+  background-color: #1E90FF;
+}
+.login-box,
+.reg-box  {
+  /* padding-top: 20px; */
+  background-color: #fff;
+  border: 1px solid #fff;
+  border-radius: 3px;
+  padding: 14px 20px;
+  box-shadow: 0 0 8px #eeeeee;
+}
+.reg-box {
+  display: none;
+  
+}
+/* 登录的表单 */
+/* .layui-form { */
+  /* padding: 0 0px; */
+/* }  */
+.links {
+  display: flex;
+  justify-content: flex-end;
+}
+.links a {
+  font-size: 13px;
+}
+.layui-form-item {
+  position: relative;
+}
+.layui-icon {
+  position: absolute;
+  left: 10px;
+  top: 10px;
+}
+.layui-input {
+  padding-left: 32px;
+}
